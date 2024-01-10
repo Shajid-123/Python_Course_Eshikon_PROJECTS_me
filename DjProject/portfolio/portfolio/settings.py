@@ -80,8 +80,8 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'esh_portfolio',
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "esh_portfolio",
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
