@@ -24,4 +24,7 @@ urlpatterns = [
     path('admin/about', views.about_input, name='about'),
     path('admin/about/insert', views.about_insert, name='about_insert'),
     path('admin/about/edit/<int:id>', views.edit_index, name='edit_index'),
+    path('admin/about/edit', views.about_edit, name='about_edit'),
+    path('admin/delete/<int:id>',views.delete_index,name='delete_index'),
+    path("admin/user/email_verification/<str:id>",views.email_verify,name='email_verify')
 ]

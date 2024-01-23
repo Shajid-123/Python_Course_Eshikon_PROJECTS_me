@@ -54,6 +54,14 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+EMAIL_BACKENDS = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'shoaibrahmanshajid@gmail.com'
+EMAIL_HOST_PASSWORD = 'irsm kjhy rnhn lgxk'
+
+
 ROOT_URLCONF = 'portfolio.urls'
 
 TEMPLATES = [

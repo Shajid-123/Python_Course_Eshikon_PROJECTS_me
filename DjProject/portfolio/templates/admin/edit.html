@@ -309,13 +309,14 @@
 									<h4 class="card-title">Inert data in About table</h4>
 								</div>
 								<div class="card-body">
-									<form action="{% url 'about_insert' %}", method="POST">
+									<form action="{% url 'about_edit' %}", method="POST">
 										{% csrf_token %}
 										<div class="form-group row">
 											<label class="col-form-label col-md-2">Name</label>
 											<div class="col-md-10">
 												<input type="text" class="form-control"
 												name="name" value="{{data.name}}">
+												<input type="hidden" name="id" value="{{data.id}}">
 											</div>
 										</div>
 										<div class="form-group row">

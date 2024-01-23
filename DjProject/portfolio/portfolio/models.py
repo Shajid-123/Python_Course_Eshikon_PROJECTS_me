@@ -11,6 +11,8 @@ class About(models.Model):
     no_digital_awards = models.CharField(max_length=500)  
     description =  models.TextField(max_length=5000)
     date_time =  models.CharField(max_length=5000)
+    v_c = models.CharField(max_length=5000)
+    v_status = models.CharField(max_length=10)
 
 class Companies(models.Model):
     Images = models.ImageField(null=True, blank=True,upload_to="images/")
