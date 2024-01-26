@@ -13,6 +13,9 @@ class About(models.Model):
     date_time =  models.CharField(max_length=5000)
     v_c = models.CharField(max_length=5000)
     v_status = models.CharField(max_length=10)
+    password = models.CharField(max_length=100)
+
+
 
 class Companies(models.Model):
     Images = models.ImageField(null=True, blank=True,upload_to="images/")
